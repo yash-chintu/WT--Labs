@@ -1,0 +1,53 @@
+<html>
+    <head>
+<title>Cards game</title>
+
+
+    </head>
+    <body>
+        <h1>Welcome to cards game</h1>
+        <div class="cardshead"></div>
+       
+        <form action="" method="POST" name="Game">
+            <label for="players" class="p">Select no. of players:</label>
+            <select id="players">
+                <option value="1">select no. of players</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+            </select>
+            <br><br>
+            <label for="sets" class="s">Select no. of sets:</label>
+            <select id="sets">
+                <option value="1">select no. of sets</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <br><br>
+            <div class="submit">
+                <button type="button" class="button"
+                    onClick="playcardsgame();">
+                    Ok let's play the game
+                </button>
+            </div>
+        </form>
+       <br>
+        <table id="table2" border="1"></table>
+       
+        <div class="body"></div>
+        <script type="text/javascript "src="cards.js" >
+        </script>
+    </body>
+</html>
