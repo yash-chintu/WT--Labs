@@ -1,0 +1,38 @@
+<%-include('navbar.ejs');%>
+<div class="container" align="center" >
+<h1>Cards Game</h1>
+<label for="no_of_players">number of players</label>
+<select id = "no_of_players" name="no_of_players" >
+    <option value='0'>choose</option>  
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+  <label for="no_of_cards">number of cards</label>
+  <select id = "no_of_cards" name="no_of_cards" >
+    <option value='0'>choose</option>  
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+  </select>
+<button id="generate" class="btn btn-sm btn-dark">Generate Cards</button>
+<br><br>
+<table id="cardstable" class="table ">
+
+</table>
+<br>
+<h2></h2>
+</div>
+<script src="/jsfiles/cardsgame.js"></script>
+</body>
+</html>

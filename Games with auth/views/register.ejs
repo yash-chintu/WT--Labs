@@ -1,0 +1,72 @@
+<%-include('forms.ejs');%>
+<main>
+  <div class="login-card-container">
+    <div class="card container-sm">
+      <br>
+      <form class="text-center" action="/auth/register" method="post">
+        <input
+          id="username"
+          name="username"
+          type="text"
+          class="form-control"
+          placeholder="Username"
+          required
+          autocomplete="off"
+        />
+        <br />
+        <input
+          id="email"
+          name="email"
+          type="email"
+          class="form-control"
+          placeholder="Email-address"
+          required
+          autocomplete="off"
+        />
+        <br />
+        <input
+          id="mobile"
+          name="mobile"
+          type="Number"
+          class="form-control"
+          placeholder="Mobile"
+          required
+          autocomplete="off"
+        />
+        <br />
+        <input
+          id="password"
+          name="password"
+          type="password"
+          class="form-control"
+          placeholder="Password"
+          aria-describedby="passwordSafetyHint"
+          required
+        />
+        
+        <br />
+        <input
+          id="confirmPassword"
+          name="confirmPassword"
+          type="password"
+          class="form-control"
+          placeholder="Confirm Password"
+          required
+        />
+        <br />
+        <p style="color:red"><%=errorMessage%></p>
+        <hr />
+        <div class="text-center login-btn">
+          <button id="register" type="button" class="btn btn-success" onclick="validate()">Register</button>
+          
+          <button type="reset" class="btn btn-danger">Reset</button>
+          <button id="submit" type="submit" class="btn btn-primary" style="visibility: hidden;">submit</button>
+        </div>
+      </form>
+      <br>
+    </div>
+  </div>
+</main>
+<script src="/jsfiles/validation.js"></script>
+</body>
+</html>

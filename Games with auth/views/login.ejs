@@ -1,0 +1,48 @@
+<%-include('forms.ejs');%>
+<main>
+  <div class="title-div">
+    <div class="heading text-center">
+      <h2><%=brandTitle%></h2>
+    </div>
+    <br />
+  </div>
+  <div class="login-card-container">
+    <div class="card container-sm" align="center"; >
+      <br>
+      <form class="text-center " action="/auth/login" method="post" onsubmit="validate()">
+        <input
+          name="username"
+          type="text"
+          class="form-control"
+          placeholder="Username"
+          required
+          autocomplete="off"
+        />
+        <br />
+        <input
+          name="password"
+          type="password"
+          class="form-control"
+          placeholder="Password"
+          required
+        />
+        <br />
+        <p style="color:red"><%=errorMessage%></p>
+        <div class="text-center login-btn">
+          <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+        <br>
+        <div class="text-center login-btn">
+          <a href="/register"
+            ><button type="button" class="btn btn-success">Register</button></a
+          >
+        </div>
+      </form>
+      <br>
+    </div>
+  </div>
+</main>
+<script src="/js/validation.js"></script>
+
+</body>
+</html>
